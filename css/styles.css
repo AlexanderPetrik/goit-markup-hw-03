@@ -1,0 +1,197 @@
+:root {
+    --primary-cl: #4D5AE5;
+    --hover-btn-cl: #404BBF;
+    --dark-bg-cl: #2E2F42;
+    --primary-txt-cl: #434455;
+    --subtitle-txt-cl: #8E8F99;
+    --light-cl: #F4F4FD;
+    --white-cl: #ffffff;
+    --accent-cl: #E7E9FC;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: var(--primary-txt-cl);
+    background-color: var(--white-cl)
+}
+
+/* Button */
+
+.ptimary-btn,
+.alternative-btn {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: calc(24 / 16);
+    letter-spacing: 0.04em;
+    
+    border-color: transparent;
+
+    cursor: pointer;
+}
+
+.ptimary-btn {
+    color: var(--white-cl);
+        background-color: var(--primary-cl);
+}
+
+.alternative-btn {
+    color: var(--primary-cl);
+    background-color: var(--light-cl);
+}
+
+.ptimary-btn:hover,
+.ptimary-btn:focus {
+    background-color: var(--hover-btn-cl);
+}
+
+.alternative-btn:hover,
+.alternative-btn:focus {
+    color: var(--white-cl);
+    background-color: var(--hover-btn-cl);
+}
+
+/* title h2-h3 */
+
+.section-title {
+    font-size: 36px;
+    line-height: calc(40 / 36);
+    text-align: center;
+}
+
+.sub-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+}
+
+/* Logo */
+
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    text-transform: uppercase;
+    color: var(--primary-cl);
+}
+
+.logo .dark-logo {
+    color: var(--dark-bg-cl);
+}
+
+.logo .light-logo {
+    color: var(--light-cl);
+}
+
+/* Nav */
+
+.top-nav {
+    list-style: none;
+}
+
+.top-nav-item {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: calc(24 / 16);
+    text-decoration: none;
+    color: var(--primary-txt-cl);
+} 
+
+.contacts {
+    list-style: none;
+    line-height: calc(24 / 16);
+}
+
+.contacts-item a {
+    font-style: normal;
+    color: var(--primary-txt-cl);
+    text-decoration: none; /* этот стиль перебиваеться чем-то и цвет не наследуется, ошибку не могу найти */
+}
+
+.top-nav-item:hover,
+.top-nav-item:focus {
+    color: var(--primary-cl);     
+}
+
+.contacts-item a:hover,
+.contacts-item a:focus {
+    color: var(--primary-cl);    
+}
+
+/* Hero section */
+
+.hero-section {
+    background-color: var(--dark-bg-cl);
+}
+
+.hero-section-title {
+    font-size: 56px;
+    line-height: calc(60 / 56);
+
+    color: var(--white-cl);
+}
+
+/* Our features section */
+
+.our-features-list {
+    list-style: none;
+}
+
+.our-features-item p {
+    line-height: calc(24 / 16);
+}
+
+/* What are we doing */
+
+.we-doing-list {
+    list-style: none;
+}
+
+/* Our team */
+
+.our-team {
+    background-color: var(--light-cl);
+}
+
+.our-team-list {
+    list-style: none;
+}
+
+.our-team-item {
+    background-color: var(--white-cl);
+}
+
+.our-team-item p {
+    line-height: calc(24 / 16);
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--dark-bg-cl);
+}
+
+.footer-txt {
+    line-height: calc(24 / 16);
+    color: var(--accent-cl);
+}
+
+/* Pornfolio */
+
+.portfolio-filter {
+    list-style: none;
+}
+
+.portfolio-works {
+    list-style: none;
+}
+
+.portfolio-item {
+    line-height: calc(24 / 16);
+}
