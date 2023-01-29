@@ -63,7 +63,7 @@ body {
 /* Wrapper */
 
 .container {
-    max-width: 1158px;
+    width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -111,7 +111,6 @@ body {
     padding: 12px 24px;
 
     border: 1px solid #E7E9FC;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
 }
 
@@ -123,12 +122,10 @@ body {
 .alternative-btn:hover,
 .alternative-btn:focus {
     color: var(--white-cl);
-    background-color: var(--hover-btn-cl);
+    background-color: var(--hover-btn-cl);  
 
-/* Есть подозрение на то, что тени не переменяються при ховере ??????????*/
-
+    border: 1px solid var(--hover-btn-cl);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
 }
 
 /* title h2-h3 */
@@ -178,16 +175,11 @@ body {
 
 }
 
-.adress-wrapper {
-    display: flex;
-    align-items: center;
+.address {
+    margin-right: 0 auto;
 }
 
 /* Logo */
-
-.logo-wrap {
-    margin-right: 76px;
-}
 
 .logo {
     display: block;
@@ -201,7 +193,7 @@ body {
     text-transform: uppercase;
     color: var(--primary-cl);
 
-    padding: 24px 0;
+    margin-right: 76px;
     display: block;
 }
 
@@ -279,17 +271,21 @@ body {
     background-color: var(--dark-bg-cl);
 }
 
-.hero-section-title {
+.hero-title {
     font-size: 56px;
     line-height: calc(60 / 56);
+    letter-spacing: 0.02em;
+    text-align: center;
 
     color: var(--white-cl);
 
-    margin: 0 0 48px 0;
+    margin-bottom: 48px;
+    max-width: 494px;
+    margin: 0 auto 48px;
 }
 
 .hero-container {
-    padding: 188px 332px;
+    padding: 188px 0;
 }
 
 /* Our features section */
@@ -362,7 +358,7 @@ body {
 }
 
 .sub-wrap {
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 
 .our-team-item .sub-title {
@@ -381,6 +377,10 @@ body {
     padding: 100px 0;
 }
 
+.footer .logo {
+    margin-bottom: 16px;
+}
+
 .footer-txt {
     line-height: calc(24 / 16);
     color: var(--accent-cl);
@@ -390,14 +390,17 @@ body {
 /* =====================Pornfolio ========================*/
 /* ====================================================== */
 
-.filter-wrap {
-    padding: 96px 0 72px 0;
+.portfolio-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 
 .portfolio-filter {
     display: flex;
     justify-content: center;
     column-gap: var(--indent);
+
+    margin-bottom: 72px;
 }
 
 .portfolio-works {
@@ -421,8 +424,4 @@ body {
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
-}
-
-.portfolio-bottom {
-    padding-bottom: 120px;
 }
